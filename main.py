@@ -3,8 +3,12 @@ from selenium import webdriver
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 from selenium.webdriver.support.select import Select
 
+#firefox executable file path
 firefoxBin = FirefoxBinary(r'/usr/local/firefox_dev/firefox')
+#add gecko executable file path
 driver = webdriver.Firefox(firefox_binary=firefoxBin, executable_path=r'/usr/local/bin/geckodriver')
+
+#FETCH PAGE
 url = "http://fap.fpt.edu.vn/"
 driver.get(url)
 driver.implicitly_wait(0.5)
@@ -23,7 +27,7 @@ select = Select(dropdown)
 select.select_by_visible_text("FU-Hồ Chí Minh")
 time.sleep(5)
 
-#CLICK BUTTON
+#CLICK SIGN IN BUTTON
 main_page = driver.current_window_handle
 button = driver.find_element_by_class_name("g-signin2")
 button.click()  #pop up
@@ -33,6 +37,7 @@ time.sleep(5)
 for handle in driver.window_handles: 
     if handle != main_page: 
         login_page = handle
+
 #LOGIN
 print('Enter email id : ', end ='') 
 email = input().strip() 
@@ -52,6 +57,7 @@ next = driver.find_element_by_xpath('//*[@id="passwordNext"]')
 next.click()
 time.sleep(5)
 
+#SWITCH TO MAIN PAGE
 driver.switch_to.window(main_page)
 print(driver.page_source)
 
