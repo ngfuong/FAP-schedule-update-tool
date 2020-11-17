@@ -1,0 +1,168 @@
+1605602454668	geckodriver	INFO	Listening on 127.0.0.1:55199
+1605612125915	geckodriver	INFO	Listening on 127.0.0.1:49921
+1605612351259	geckodriver	INFO	Listening on 127.0.0.1:45557
+1605612745971	geckodriver	INFO	Listening on 127.0.0.1:46277
+1605612795702	geckodriver	INFO	Listening on 127.0.0.1:53123
+1605612795710	mozrunner::runner	INFO	Running command: "/usr/local/firefox_dev/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileGItH5R"
+
+(firefox:13020): Gtk-WARNING **: 18:33:15.755: Theme parsing error: gtk.css:7188:40: Junk at end of value for background-color
+
+(/usr/local/firefox_dev/firefox-bin:13085): Gtk-WARNING **: 18:33:16.458: Theme parsing error: gtk.css:7188:40: Junk at end of value for background-color
+
+(/usr/local/firefox_dev/firefox-bin:13105): Gtk-WARNING **: 18:33:16.587: Theme parsing error: gtk.css:7188:40: Junk at end of value for background-color
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1605612797422	Marionette	INFO	Listening on port 43479
+
+(/usr/local/firefox_dev/firefox-bin:13180): Gtk-WARNING **: 18:33:17.462: Theme parsing error: gtk.css:7188:40: Junk at end of value for background-color
+1605612797534	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://fap.fpt.edu.vn/JavaScript/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en_US.0_afc8ibZR4.O/m=signin2/rt=j/sv=1/d=1/ed=1/am=wQE/rs=AGLTcCOPV8Bttuu5r6907bIMhw8f2tfAew/cb=gapi.loaded_0, line 229: uncaught exception: [object Object]
+JavaScript warning: http://fap.fpt.edu.vn/JavaScript/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://accounts.google.com"
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1605613012204	Marionette	INFO	Stopped listening on port 43479
+1605613014962	geckodriver	INFO	Listening on 127.0.0.1:33387
+1605613014968	mozrunner::runner	INFO	Running command: "/usr/local/firefox_dev/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileU4N3Km"
+
+(firefox:13380): Gtk-WARNING **: 18:36:55.015: Theme parsing error: gtk.css:7188:40: Junk at end of value for background-color
+
+(/usr/local/firefox_dev/firefox-bin:13452): Gtk-WARNING **: 18:36:55.778: Theme parsing error: gtk.css:7188:40: Junk at end of value for background-color
+
+(/usr/local/firefox_dev/firefox-bin:13472): Gtk-WARNING **: 18:36:55.892: Theme parsing error: gtk.css:7188:40: Junk at end of value for background-color
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1605613016609	Marionette	INFO	Listening on port 43503
+
+(/usr/local/firefox_dev/firefox-bin:13552): Gtk-WARNING **: 18:36:56.736: Theme parsing error: gtk.css:7188:40: Junk at end of value for background-color
+1605613016749	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://fap.fpt.edu.vn/JavaScript/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en_US.0_afc8ibZR4.O/m=signin2/rt=j/sv=1/d=1/ed=1/am=wQE/rs=AGLTcCOPV8Bttuu5r6907bIMhw8f2tfAew/cb=gapi.loaded_0, line 229: uncaught exception: [object Object]
+JavaScript warning: http://fap.fpt.edu.vn/JavaScript/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://accounts.google.com"
+1605613287783	geckodriver	INFO	Listening on 127.0.0.1:48501
+1605613287788	mozrunner::runner	INFO	Running command: "/usr/local/firefox_dev/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileoRTZjY"
+
+(firefox:13757): Gtk-WARNING **: 18:41:27.834: Theme parsing error: gtk.css:7188:40: Junk at end of value for background-color
+
+(/usr/local/firefox_dev/firefox-bin:13815): Gtk-WARNING **: 18:41:28.495: Theme parsing error: gtk.css:7188:40: Junk at end of value for background-color
+
+(/usr/local/firefox_dev/firefox-bin:13840): Gtk-WARNING **: 18:41:28.611: Theme parsing error: gtk.css:7188:40: Junk at end of value for background-color
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1605613289421	Marionette	INFO	Listening on port 42195
+
+(/usr/local/firefox_dev/firefox-bin:13922): Gtk-WARNING **: 18:41:29.503: Theme parsing error: gtk.css:7188:40: Junk at end of value for background-color
+1605613289525	Marionette	WARN	TLS certificate errors will be ignored for this session
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: http://fap.fpt.edu.vn/JavaScript/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1605613293281	Marionette	INFO	Stopped listening on port 43503
+JavaScript warning: http://fap.fpt.edu.vn/JavaScript/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1605613347946	Marionette	INFO	Stopped listening on port 42195
