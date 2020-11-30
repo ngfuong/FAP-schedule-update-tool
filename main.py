@@ -15,14 +15,6 @@ driver.get(url)
 driver.implicitly_wait(0.5)
 
 #SELECT DROP DOWN MENU
-"""
-<select name="ctl00$mainContent$ddlCampus" onchange="javascript:setTimeout('__doPostBack(\'ctl00$mainContent$ddlCampus\',\'\')', 0)" id="ctl00_mainContent_ddlCampus" class="btn btn-default">
-	<option selected="selected" value="">Select Campus</option>
-	<option value="3">FU-Hòa Lạc</option>
-	<option value="4">FU-Hồ Chí Minh</option>
-	<option value="5">FU-Đà Nẵng</option>
-	<option value="6">FU-Cần Thơ</option>
-"""
 dropdown = driver.find_element_by_xpath("//*[@name='ctl00$mainContent$ddlCampus']")
 select = Select(dropdown)
 select.select_by_visible_text("FU-Hồ Chí Minh")
