@@ -29,8 +29,8 @@ with open("soup.html", "r") as soup_html:
 with open('timetable.json', 'w') as file:
     json.dump(timetable, file, ensure_ascii=False, indent=4)
 
-with open('timetable.json', 'r') as f:
-    data = f.read()
-    json_data = json.loads(data)
+#with open('timetable.json', 'r') as f:
+#    data = f.read()
+#    json_data = json.loads(data)
 
-pprint.pprint(json_data)
+#pprint.pprint(json_data)
