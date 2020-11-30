@@ -2,6 +2,7 @@ import time
 from selenium import webdriver
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 from selenium.webdriver.support.select import Select
+from bs4 import BeautifulSoup
 
 #firefox executable file path
 firefoxBin = FirefoxBinary(r'/opt/firefox_dev/firefox')
@@ -46,16 +47,16 @@ driver.switch_to.window(login_page)
 print('Enter email id...')
 #email = input().strip()
 email = "phuonglnse150214@fpt.edu.vn"
-print('Enter password: ', end ='')
+print('Enter password: ', end='')
 password = input().strip()
 driver.find_element_by_id("identifierId").send_keys(email)
+time.sleep(2)
 # click the next button
-next = driver.find_element_by_id("identifierNext")
-next.click()
+next = driver.find_element_by_id("identifierNext").click()
 time.sleep(2)
 # enter the password
 driver.find_elements_by_name("password")[0].send_keys(password)
-
+time.sleep(2)
 # click the login button
 login = driver.find_element_by_id("passwordNext")
 login.click()
@@ -63,5 +64,21 @@ time.sleep(2)
 
 #SWITCH TO MAIN PAGE
 driver.switch_to.window(main_page)
-print(driver.page_source)
+#Click schedule
+driver.find_element_by_xpath("//a[@href='Schedule/TimeTable.aspx']").click()
+time.sleep(2)
 
+#Default values is Spring21 term=45, campus=4 (HCM)
+#Choose group
+campus= "4" #HCM Campus
+term= "45" #Spring21
+print('Enter class Group: ', end='')
+group = input().strip()
+driver.find_element_by_xpath("//a[@href='?campus={campus}&term={term}&group={group}']".format(campus=campus,term=term,group=group)).click()
+time.sleep(2)
+#SCRAPEEEE
+html = driver.page_source
+soup = BeautifulSoup(html, "html.parser")
+#Save soup to file
+with open("soup.html", "w") as soup_html:
+    print(soup, file=soup_html)
