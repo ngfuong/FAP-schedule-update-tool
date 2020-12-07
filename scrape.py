@@ -1,8 +1,6 @@
 from bs4 import BeautifulSoup
 import re
 import json
-import pprint
-
 
 timetable = {}
 subject_list = []
@@ -11,7 +9,6 @@ with open("soup.html", "r") as soup_html:
     subjects = soup.find_all(id='id')
     for subject in subjects:
         subject_name = str(subject.find('caption').text)
-        print(subject_name)
         timetable[subject_name] = list()
         schedules = subject.find_all('tr')
         date_list = []
@@ -38,7 +35,6 @@ with open("soup.html", "r") as soup_html:
         # RFC 3339 format: omission of T is acceptable
         # E.g: 2019-10-12 07:20:50.52Z
 
-        timeZone = 'Asia/Bangkok'
         start_time =\
             {'1': '07:00:00+07:00',
              '2': '08:45:00+07:00',
@@ -56,16 +52,10 @@ with open("soup.html", "r") as soup_html:
 
         for i in range(len(date_list)):
             timetable[subject_name].append(
-                {"date": date_list[i],
+                {#"date": date_list[i],
                  "start_time": date_list[i]+"T"+start_time[slot_list[i]],
                  "end_time": date_list[i]+"T"+end_time[slot_list[i]],
                  "room": room_list[i]})
 
 with open('timetable.json', 'w') as file:
     json.dump(timetable, file, ensure_ascii=False, indent=4)
-
-#with open('timetable.json', 'r') as f:
-#    data = f.read()
-#    json_data = json.loads(data)
-
-#pprint.pprint(json_data)
