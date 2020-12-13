@@ -1,10 +1,6 @@
 import json
-import os.path
-import pickle
-from google.auth.transport.requests import Request
-from google_auth_oauthlib.flow import InstalledAppFlow
-from googleapiclient.discovery import build
 import pprint
+from service_account_setup import create_service
 
 with open('timetable.json', 'r') as inputFile:
     # Loading timetable data
@@ -21,38 +17,31 @@ with open('timetable.json', 'r') as inputFile:
                 'description': 'Room: '+item['room'],
                 'start': {
                     'dateTime': item['start_time'],
-                    'timeZone': timeZone
+                    'timeZone': timeZone,
                 },
                 'end': {
                     'dateTime': item['end_time'],
-                    'timeZone': timeZone
+                    'timeZone': timeZone,
                 },
                 # READ DOC ABOUT THIS
                 'recurrence': [
-                    'RRULE:FREQ=ONCE;COUNT=1'
+                    'RRULE:FREQ=ONCE;COUNT=1',
                 ],
                 # READ DOC ABOUT THIS
                 'reminders': {
                     'useDefault': False,
                     'overrides': [
-                        {'method': 'pop', 'minutes': 45}
-                    ]
-                }
+                        {'method': 'pop', 'minutes': 45},
+                    ],
+                },
             }
             event_list.append(event)
 
 # USING GOOGLE CALENDAR API TO CREATE EVENT
-SCOPES = ['https://www.googleapis.com/auth/calendar']
-
-flow = InstalledAppFlow.from_client_secrets_file(
-    'credentials-fap.json', SCOPES
-)
-creds = flow.run_local_server(port=0)
-
-service = build('calendar', 'v3', credentials=creds)
-
+SUBJECT = 'ubuntu@fap-scraping-298512.iam.gserviceaccount.com '
+service = create_service(SUBJECT)
 for item in event_list:
-    event = service.events().insert(calendarId='primary', body=item).execute()
+    event = service.events().insert(calendarId=SUBJECT, body=item).execute()
     print("Event created:", event.get('htmlLink'))
 
 #with open('event.json', 'w') as outputFile:
